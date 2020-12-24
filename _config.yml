@@ -1,6 +1,6 @@
 # Book settings
 title: General Physics
-author: Dr. Justin Dressel
+author: '<a href="http://www.justindressel.com">Justin Dressel, Ph.D.</a>' 
 copyright: "2020"
 logo: images/cradle.gif
 only_build_toc_files: true
@@ -8,9 +8,13 @@ exclude_patterns: [README.md]
 
 html:
   favicon: images/favicon.ico
-  extra_navbar: ""
-  extra_footer: Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  extra_navbar: |-
+          <a href="https://www.chapman.edu/physics">Chapman University Physics</a><br/>
+          <a href="https://quantum.chapman.edu">Institute for Quantum Studies</a><br/>
+          Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 
+parse:
+  myst_extended_syntax: true
 
 repository:
   url: https://github.com/justindressel/generalphysics
