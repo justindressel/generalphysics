@@ -21,9 +21,13 @@ kernelspec:
 
 ## Statics
 
-## Linear and Projectile Motion
+## Linear Motion and Inertia
+
+## Projectile Motion
 
 ## Constraints
+
+## Rotational Motion and Inertia
 
 ## Coupled Motions
 
