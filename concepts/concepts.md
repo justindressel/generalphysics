@@ -91,7 +91,7 @@ kernelspec:
 
 ### Formulations of Quantum Mechanics
 
-#### Schr\"odinger
+#### Schrodinger
 
 #### Heisenberg
 

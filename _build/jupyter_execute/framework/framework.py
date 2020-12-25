@@ -5,14 +5,14 @@
 # 
 # ## Kinematics
 # 
+# ## Symmetries 
+# 
 # ## The Cost of Action
+# 
+# ## Conserved Quantities
+# 
+# ## Invariants
 # 
 # ## Dynamics
 # 
 # ## Reference Frames
-# 
-# ## Symmetries 
-# 
-# ## Invariants
-# 
-# ## Conserved Quantities
