@@ -1,23 +1,40 @@
 # Book settings
 title: General Physics
 author: '<a href="http://www.justindressel.com">Justin Dressel, Ph.D.</a>' 
+email: dressel@chapman.edu
+description: >-
+  Supplementary notes for the General Physics sequence at Chapman University.
 copyright: "2020"
 logo: images/cradle.gif
 only_build_toc_files: true
 exclude_patterns: [README.md]
 
+parse:
+  myst_extended_syntax: true
+
 html:
+  home_page_in_navbar: false
+  url: "https://justindressel.github.io/"
+  baseurl: "/generalphysics"
   favicon: images/favicon.ico
   extra_navbar: |-
           <a href="https://www.chapman.edu/physics">Chapman University Physics</a><br/>
           <a href="https://quantum.chapman.edu">Institute for Quantum Studies</a><br/>
           Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  comments:
+    hypothesis: true
 
-parse:
-  myst_extended_syntax: true
+launch_buttons:
+  use_jupyterlab: false
+  notebook_interface: "classic" 
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
+  thebe: true
 
 repository:
   url: https://github.com/justindressel/generalphysics
+  branch: main
+  path_to_book: _build/html
 
 latex:
   latex_documents:

@@ -3,12 +3,20 @@
 - part: Preface
   numbered: false
   chapters:
-  - file: howto
+  - file: preface/howto
+  - file: preface/whyphys
+  - file: preface/succeed
+  - file: preface/physmap
 
 - part: PHYS 101
   numbered: true
   chapters:
   - file: concepts/concepts
+    sections:
+    - file: concepts/structure
+    - file: concepts/modeling
+    - file: concepts/principles
+    - file: concepts/formalisms
   - file: technical/technical
   - file: framework/framework
   - file: conservation/conservation
