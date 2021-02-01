@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4. Conservation and Exchange &#8212; General Physics</title>
+    <title>1.4. Formalisms &#8212; General Physics</title>
     
   <link rel="stylesheet" href="../_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
 
@@ -56,22 +56,22 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="/generalphysics/conservation/conservation.html" />
+    <link rel="canonical" href="/generalphysics/concepts/formalisms.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Newtonian Mechanics" href="../newtonslaws/newtonslaws.html" />
-    <link rel="prev" title="3. Describing Motion and its Causes" href="../framework/framework.html" />
+    <link rel="next" title="2. Mathematics as Formal Language" href="../technical/technical.html" />
+    <link rel="prev" title="1.3. Physical Principles" href="principles.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="/generalphysics/conservation/conservation.html" />
+<meta property="og:url"         content="/generalphysics/concepts/formalisms.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Conservation and Exchange" />
-<meta property="og:description" content="Conservation and Exchange  Energy-momentum  Collisions  Internal Energy  Background Potential Fields  Oscillations  Angular Momentum  RotationsEnergy-momentumCo" />
+<meta property="og:title"       content="Formalisms" />
+<meta property="og:description" content="Formalisms  Formulations of Classical Mechanics  Newton  Hamilton-Jacobi  Lagrange  Hamilton  Poisson-Dirac  Liouville  Koopman-von-Neumann  Formulations of Qua" />
 <meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
 
 <meta name="twitter:card" content="summary" />
@@ -136,10 +136,32 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../concepts/concepts.html">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="concepts.html">
    1. Fundamental Concepts
   </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="structure.html">
+     1.1. Structure of the Physical World
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="modeling.html">
+     1.2. Formal Modeling
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="principles.html">
+     1.3. Physical Principles
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     1.4. Formalisms
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../technical/technical.html">
@@ -151,8 +173,8 @@
    3. Describing Motion and its Causes
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../conservation/conservation.html">
    4. Conservation and Exchange
   </a>
  </li>
@@ -208,12 +230,9 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
     
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/conservation/conservation.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/conservation/conservation.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/concepts/formalisms.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -232,26 +251,6 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 
         <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/justindressel/generalphysics/main?urlpath=tree/_build/html/conservation/conservation.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
     </div>
 
     <!-- Table of contents -->
@@ -263,39 +262,78 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-momentum">
-   4.1. Energy-momentum
+  <a class="reference internal nav-link" href="#formulations-of-classical-mechanics">
+   1.4.1. Formulations of Classical Mechanics
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#newton">
+     1.4.1.1. Newton
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hamilton-jacobi">
+     1.4.1.2. Hamilton-Jacobi
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lagrange">
+     1.4.1.3. Lagrange
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hamilton">
+     1.4.1.4. Hamilton
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#poisson-dirac">
+     1.4.1.5. Poisson-Dirac
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#liouville">
+     1.4.1.6. Liouville
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#koopman-von-neumann">
+     1.4.1.7. Koopman-von-Neumann
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#collisions">
-   4.2. Collisions
+  <a class="reference internal nav-link" href="#formulations-of-quantum-mechanics">
+   1.4.2. Formulations of Quantum Mechanics
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#internal-energy">
-   4.3. Internal Energy
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#background-potential-fields">
-   4.4. Background Potential Fields
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#oscillations">
-   4.5. Oscillations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#angular-momentum">
-   4.6. Angular Momentum
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rotations">
-   4.7. Rotations
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#schrodinger">
+     1.4.2.1. Schrodinger
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#heisenberg">
+     1.4.2.2. Heisenberg
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dirac">
+     1.4.2.3. Dirac
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feynman">
+     1.4.2.4. Feynman
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#schwinger">
+     1.4.2.5. Schwinger
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -308,28 +346,49 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         
               <div>
                 
-  <div class="section" id="conservation-and-exchange">
-<h1><span class="section-number">4. </span>Conservation and Exchange<a class="headerlink" href="#conservation-and-exchange" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="energy-momentum">
-<h2><span class="section-number">4.1. </span>Energy-momentum<a class="headerlink" href="#energy-momentum" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="formalisms">
+<h1><span class="section-number">1.4. </span>Formalisms<a class="headerlink" href="#formalisms" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="formulations-of-classical-mechanics">
+<h2><span class="section-number">1.4.1. </span>Formulations of Classical Mechanics<a class="headerlink" href="#formulations-of-classical-mechanics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="newton">
+<h3><span class="section-number">1.4.1.1. </span>Newton<a class="headerlink" href="#newton" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="collisions">
-<h2><span class="section-number">4.2. </span>Collisions<a class="headerlink" href="#collisions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hamilton-jacobi">
+<h3><span class="section-number">1.4.1.2. </span>Hamilton-Jacobi<a class="headerlink" href="#hamilton-jacobi" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="internal-energy">
-<h2><span class="section-number">4.3. </span>Internal Energy<a class="headerlink" href="#internal-energy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lagrange">
+<h3><span class="section-number">1.4.1.3. </span>Lagrange<a class="headerlink" href="#lagrange" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="background-potential-fields">
-<h2><span class="section-number">4.4. </span>Background Potential Fields<a class="headerlink" href="#background-potential-fields" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hamilton">
+<h3><span class="section-number">1.4.1.4. </span>Hamilton<a class="headerlink" href="#hamilton" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="oscillations">
-<h2><span class="section-number">4.5. </span>Oscillations<a class="headerlink" href="#oscillations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="poisson-dirac">
+<h3><span class="section-number">1.4.1.5. </span>Poisson-Dirac<a class="headerlink" href="#poisson-dirac" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="angular-momentum">
-<h2><span class="section-number">4.6. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="liouville">
+<h3><span class="section-number">1.4.1.6. </span>Liouville<a class="headerlink" href="#liouville" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="rotations">
-<h2><span class="section-number">4.7. </span>Rotations<a class="headerlink" href="#rotations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="koopman-von-neumann">
+<h3><span class="section-number">1.4.1.7. </span>Koopman-von-Neumann<a class="headerlink" href="#koopman-von-neumann" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="formulations-of-quantum-mechanics">
+<h2><span class="section-number">1.4.2. </span>Formulations of Quantum Mechanics<a class="headerlink" href="#formulations-of-quantum-mechanics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="schrodinger">
+<h3><span class="section-number">1.4.2.1. </span>Schrodinger<a class="headerlink" href="#schrodinger" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="heisenberg">
+<h3><span class="section-number">1.4.2.2. </span>Heisenberg<a class="headerlink" href="#heisenberg" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="dirac">
+<h3><span class="section-number">1.4.2.3. </span>Dirac<a class="headerlink" href="#dirac" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="feynman">
+<h3><span class="section-number">1.4.2.4. </span>Feynman<a class="headerlink" href="#feynman" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="schwinger">
+<h3><span class="section-number">1.4.2.5. </span>Schwinger<a class="headerlink" href="#schwinger" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 </div>
 
@@ -346,7 +405,7 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./conservation"
+            path: "./concepts"
         },
         predefinedOutput: true
     }
@@ -361,8 +420,8 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../framework/framework.html" title="previous page"><span class="section-number">3. </span>Describing Motion and its Causes</a>
-    <a class='right-next' id="next-link" href="../newtonslaws/newtonslaws.html" title="next page"><span class="section-number">5. </span>Newtonian Mechanics</a>
+    <a class='left-prev' id="prev-link" href="principles.html" title="previous page"><span class="section-number">1.3. </span>Physical Principles</a>
+    <a class='right-next' id="next-link" href="../technical/technical.html" title="next page"><span class="section-number">2. </span>Mathematics as Formal Language</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

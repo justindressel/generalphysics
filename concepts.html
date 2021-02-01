@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> &#8212; General Physics</title>
+    
+  <link rel="stylesheet" href="_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.bfb7730f9caf2ec0b46a44615585038c.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.30270b6e4c972e43c488.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="/generalphysics/concepts.html" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="/generalphysics/concepts.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="&lt;!-- #region jupyter={&#34;source_hidden&#34;: true} --&gt;" />
+<meta property="og:description" content="&lt;!-- #region jupyter={&#34;source_hidden&#34;: true} --&gt;jupytext: cell_metadata_filter: -all formats: md:myst,ipynb text_representation: extension: .md format_name: mys" />
+<meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/cradle.gif" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">General Physics</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction.html">
+   General Physics: Supplementary Notes
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Preface
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="howto.html">
+   How to Use These Notes
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  PHYS 101
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="concepts/concepts.html">
+   1. Fundamental Concepts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="technical/technical.html">
+   2. Mathematics as Formal Language
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="framework/framework.html">
+   3. Describing Motion and its Causes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="conservation/conservation.html">
+   4. Conservation and Exchange
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="newtonslaws/newtonslaws.html">
+   5. Newtonian Mechanics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="relativity/relativity.html">
+   6. Einsteinian Mechanics
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.chapman.edu/physics">Chapman University Physics</a><br/>
+<a href="https://quantum.chapman.edu">Institute for Quantum Studies</a><br/>
+Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/concepts.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   <!-- #region jupyter={"source_hidden": true} -->
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupytext-cell-metadata-filter-all-formats-md-myst-ipynb-text-representation-extension-md-format-name-myst-format-version-0-12-jupytext-version-1-7-1-kernelspec-display-name-python-3-language-python-name-python3">
+   jupytext:
+cell_metadata_filter: -all
+formats: md:myst,ipynb
+text_representation:
+extension: .md
+format_name: myst
+format_version: 0.12
+jupytext_version: 1.7.1
+kernelspec:
+display_name: Python 3
+language: python
+name: python3
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamental-concepts">
+   Fundamental Concepts
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#map-of-physics">
+     Map of Physics
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structure-of-the-physical-world">
+     Structure of the Physical World
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-standard-model">
+       The Standard Model
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#particles-and-fields">
+       Particles and Fields
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stable-elements-and-the-periodic-table">
+       Stable Elements and the Periodic Table
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#atoms-electrons-and-the-nucleus">
+       Atoms, Electrons, and the Nucleus
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ions-plasmas-and-molecules">
+       Ions, Plasmas, and Molecules
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gases-fluids-and-solids">
+       Gases, Fluids, and Solids
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#light-radiation-and-gravitation">
+       Light, Radiation, and Gravitation
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stellar-systems-and-cosmology">
+       Stellar Systems and Cosmology
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formal-modeling">
+     Formal Modeling
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#measurement-precision-and-error">
+       Measurement, Precision, and Error
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#systems-subsystems-and-environments">
+       Systems, Subsystems, and Environments
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nested-levels-of-description">
+       Nested Levels of Description
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#averaged-behavior-and-coarse-graining">
+       Averaged Behavior and Coarse-graining
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#symmetries-constraints-and-conservation">
+       Symmetries, Constraints, and Conservation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#physical-laws">
+     Physical Laws
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#geometry-spacetime-and-motion">
+       Geometry, Spacetime, and Motion
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reference-frames-and-proper-objects">
+       Reference Frames and Proper Objects
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conserved-quantities-from-symmetry">
+       Conserved Quantities from Symmetry
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#spacetime-translation-and-energy-momentum">
+         Spacetime Translation and Energy-momentum
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#spatial-rotation-and-orbital-angular-momentum">
+         Spatial Rotation and Orbital Angular Momentum
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#boost-acceleration-and-boost-angular-momentum">
+         Boost Acceleration and Boost Angular Momentum
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#translation-rotation-and-spin-angular-momentum">
+         Translation + Rotation and Spin Angular Momentum
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#invariants-as-particle-labels">
+       Invariants as Particle Labels
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#physical-action">
+       Physical Action
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#costs-of-motion-and-symmetries">
+         Costs of Motion and Symmetries
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#stationary-cost-and-conservation">
+         Stationary Cost and Conservation
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#dynamics-from-stationary-cost">
+         Dynamics from Stationary Cost
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formulations-of-classical-mechanics">
+       Formulations of Classical Mechanics
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#newton">
+         Newton
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#hamilton-jacobi">
+         Hamilton-Jacobi
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#lagrange">
+         Lagrange
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#hamilton">
+         Hamilton
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#poisson-dirac">
+         Poisson-Dirac
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#liouville">
+         Liouville
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#koopman-von-neumann">
+         Koopman-von-Neumann
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formulations-of-quantum-mechanics">
+       Formulations of Quantum Mechanics
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#schrodinger">
+         Schrodinger
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#heisenberg">
+         Heisenberg
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#dirac">
+         Dirac
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#feynman">
+         Feynman
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#schwinger">
+         Schwinger
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="region-jupyter-source-hidden-true">
+<h1><!-- #region jupyter={"source_hidden": true} --><a class="headerlink" href="#region-jupyter-source-hidden-true" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="jupytext-cell-metadata-filter-all-formats-md-myst-ipynb-text-representation-extension-md-format-name-myst-format-version-0-12-jupytext-version-1-7-1-kernelspec-display-name-python-3-language-python-name-python3">
+<h1>jupytext:
+cell_metadata_filter: -all
+formats: md:myst,ipynb
+text_representation:
+extension: .md
+format_name: myst
+format_version: 0.12
+jupytext_version: 1.7.1
+kernelspec:
+display_name: Python 3
+language: python
+name: python3<a class="headerlink" href="#jupytext-cell-metadata-filter-all-formats-md-myst-ipynb-text-representation-extension-md-format-name-myst-format-version-0-12-jupytext-version-1-7-1-kernelspec-display-name-python-3-language-python-name-python3" title="Permalink to this headline">¶</a></h1>
+<!-- #endregion -->
+</div>
+<div class="section" id="fundamental-concepts">
+<h1>Fundamental Concepts<a class="headerlink" href="#fundamental-concepts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="map-of-physics">
+<h2>Map of Physics<a class="headerlink" href="#map-of-physics" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="structure-of-the-physical-world">
+<h2>Structure of the Physical World<a class="headerlink" href="#structure-of-the-physical-world" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-standard-model">
+<h3>The Standard Model<a class="headerlink" href="#the-standard-model" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="particles-and-fields">
+<h3>Particles and Fields<a class="headerlink" href="#particles-and-fields" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="stable-elements-and-the-periodic-table">
+<h3>Stable Elements and the Periodic Table<a class="headerlink" href="#stable-elements-and-the-periodic-table" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="atoms-electrons-and-the-nucleus">
+<h3>Atoms, Electrons, and the Nucleus<a class="headerlink" href="#atoms-electrons-and-the-nucleus" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ions-plasmas-and-molecules">
+<h3>Ions, Plasmas, and Molecules<a class="headerlink" href="#ions-plasmas-and-molecules" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="gases-fluids-and-solids">
+<h3>Gases, Fluids, and Solids<a class="headerlink" href="#gases-fluids-and-solids" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="light-radiation-and-gravitation">
+<h3>Light, Radiation, and Gravitation<a class="headerlink" href="#light-radiation-and-gravitation" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="stellar-systems-and-cosmology">
+<h3>Stellar Systems and Cosmology<a class="headerlink" href="#stellar-systems-and-cosmology" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="formal-modeling">
+<h2>Formal Modeling<a class="headerlink" href="#formal-modeling" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="measurement-precision-and-error">
+<h3>Measurement, Precision, and Error<a class="headerlink" href="#measurement-precision-and-error" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="systems-subsystems-and-environments">
+<h3>Systems, Subsystems, and Environments<a class="headerlink" href="#systems-subsystems-and-environments" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="nested-levels-of-description">
+<h3>Nested Levels of Description<a class="headerlink" href="#nested-levels-of-description" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="averaged-behavior-and-coarse-graining">
+<h3>Averaged Behavior and Coarse-graining<a class="headerlink" href="#averaged-behavior-and-coarse-graining" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="symmetries-constraints-and-conservation">
+<h3>Symmetries, Constraints, and Conservation<a class="headerlink" href="#symmetries-constraints-and-conservation" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="physical-laws">
+<h2>Physical Laws<a class="headerlink" href="#physical-laws" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="geometry-spacetime-and-motion">
+<h3>Geometry, Spacetime, and Motion<a class="headerlink" href="#geometry-spacetime-and-motion" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="reference-frames-and-proper-objects">
+<h3>Reference Frames and Proper Objects<a class="headerlink" href="#reference-frames-and-proper-objects" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="conserved-quantities-from-symmetry">
+<h3>Conserved Quantities from Symmetry<a class="headerlink" href="#conserved-quantities-from-symmetry" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="spacetime-translation-and-energy-momentum">
+<h4>Spacetime Translation and Energy-momentum<a class="headerlink" href="#spacetime-translation-and-energy-momentum" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="spatial-rotation-and-orbital-angular-momentum">
+<h4>Spatial Rotation and Orbital Angular Momentum<a class="headerlink" href="#spatial-rotation-and-orbital-angular-momentum" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="boost-acceleration-and-boost-angular-momentum">
+<h4>Boost Acceleration and Boost Angular Momentum<a class="headerlink" href="#boost-acceleration-and-boost-angular-momentum" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="translation-rotation-and-spin-angular-momentum">
+<h4>Translation + Rotation and Spin Angular Momentum<a class="headerlink" href="#translation-rotation-and-spin-angular-momentum" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="invariants-as-particle-labels">
+<h3>Invariants as Particle Labels<a class="headerlink" href="#invariants-as-particle-labels" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="physical-action">
+<h3>Physical Action<a class="headerlink" href="#physical-action" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="costs-of-motion-and-symmetries">
+<h4>Costs of Motion and Symmetries<a class="headerlink" href="#costs-of-motion-and-symmetries" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="stationary-cost-and-conservation">
+<h4>Stationary Cost and Conservation<a class="headerlink" href="#stationary-cost-and-conservation" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="dynamics-from-stationary-cost">
+<h4>Dynamics from Stationary Cost<a class="headerlink" href="#dynamics-from-stationary-cost" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="formulations-of-classical-mechanics">
+<h3>Formulations of Classical Mechanics<a class="headerlink" href="#formulations-of-classical-mechanics" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="newton">
+<h4>Newton<a class="headerlink" href="#newton" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="hamilton-jacobi">
+<h4>Hamilton-Jacobi<a class="headerlink" href="#hamilton-jacobi" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="lagrange">
+<h4>Lagrange<a class="headerlink" href="#lagrange" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="hamilton">
+<h4>Hamilton<a class="headerlink" href="#hamilton" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="poisson-dirac">
+<h4>Poisson-Dirac<a class="headerlink" href="#poisson-dirac" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="liouville">
+<h4>Liouville<a class="headerlink" href="#liouville" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="koopman-von-neumann">
+<h4>Koopman-von-Neumann<a class="headerlink" href="#koopman-von-neumann" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="formulations-of-quantum-mechanics">
+<h3>Formulations of Quantum Mechanics<a class="headerlink" href="#formulations-of-quantum-mechanics" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="schrodinger">
+<h4>Schrodinger<a class="headerlink" href="#schrodinger" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="heisenberg">
+<h4>Heisenberg<a class="headerlink" href="#heisenberg" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="dirac">
+<h4>Dirac<a class="headerlink" href="#dirac" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="feynman">
+<h4>Feynman<a class="headerlink" href="#feynman" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="schwinger">
+<h4>Schwinger<a class="headerlink" href="#schwinger" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "justindressel/generalphysics",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By <a href="http://www.justindressel.com">Justin Dressel, Ph.D.</a><br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.30270b6e4c972e43c488.js"></script>
+
+
+    
+  </body>
+</html>

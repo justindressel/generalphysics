@@ -44,17 +44,17 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="/generalphysics/howto.html" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -64,6 +64,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="/generalphysics/howto.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="How to Use These Notes" />
+<meta property="og:description" content="How to Use These Notes  The associated General Physics course sequence at Chapman University is fully flipped, meaning that students are responsible for studyin" />
+<meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
+
+<meta name="twitter:card" content="summary" />
 
 
   </head>
@@ -224,7 +233,7 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
                 
   <div class="section" id="how-to-use-these-notes">
 <h1>How to Use These Notes<a class="headerlink" href="#how-to-use-these-notes" title="Permalink to this headline">¶</a></h1>
-<p>The associated courses at Chapman University are fully flipped, meaning that students are responsible for studying the core material outside of the synchronous class time. This format allows class to be more interactive and allow for personal guidance from the instructor to navigate challenging material. It is crucial, however, for students to study the material carefully prior to entering the classroom. Time in class is limited, so is better used to target areas where students are having difficulty, rather than lecturing on basic material that is readily learned outside class. As such, the courses follow the <a class="reference external" href="https://physics.pomona.edu/sixideas"><em>Six Ideas That Shaped Physics</em></a> texts as primary sources for the students, including content, recommended classroom practices, and the philosophy of homework to challenge and practice rather than assess.</p>
+<p>The associated General Physics course sequence at Chapman University is fully flipped, meaning that students are responsible for studying the core material outside of the synchronous class time. This format allows class to be more interactive and allow for personal guidance from the instructor to navigate challenging material. It is crucial, however, for students to study the material carefully prior to entering the classroom. Time in class is limited, so is better used to target areas where students are having difficulty, rather than lecturing on basic material that is readily learned outside class. As such, the courses generally follow the structure of the <a class="reference external" href="https://physics.pomona.edu/sixideas"><em>Six Ideas That Shaped Physics</em></a> texts as primary sources for the students.</p>
 <p>These notes are supplementary to extend the conceptual scope of the material beyond what is presented in the main text. They provide a complementary perspective to help synthesize the core content into a solid conceptual edifice from which students can build more advanced understanding. As such, the notes develop the concepts for efficient reasoning about physical systems alongside rigorous expressions of those concepts using appropriate mathematics. Examples have been used sparingly to keep the total length manageable as a viable supplemental resource.</p>
 <p>Though the notes assume basic familiarity with algebra, functions, and calculus, they reintroduce relevant mathematics systematically to make more explicit how the pieces cohesively fit together when describing physical situations. The presentation of this technical background is necessarily terse, so will be most helpful as a reference after first exposure to the associated content in the main text. The systematic presentation provided here should then help students reconstruct the material as a logical whole upon review.</p>
 <p>The material is organized into thematic chapters, designed to be cross-referenced as needed during study.</p>
@@ -248,8 +257,8 @@ A formal development of Einsteinian special relativistic mechanics in spacetime 
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "justindressel/generalphysics",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",

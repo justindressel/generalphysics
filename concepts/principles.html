@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4. Conservation and Exchange &#8212; General Physics</title>
+    <title>1.3. Physical Principles &#8212; General Physics</title>
     
   <link rel="stylesheet" href="../_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
 
@@ -56,22 +56,22 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="/generalphysics/conservation/conservation.html" />
+    <link rel="canonical" href="/generalphysics/concepts/principles.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Newtonian Mechanics" href="../newtonslaws/newtonslaws.html" />
-    <link rel="prev" title="3. Describing Motion and its Causes" href="../framework/framework.html" />
+    <link rel="next" title="1.4. Formalisms" href="formalisms.html" />
+    <link rel="prev" title="1.2. Formal Modeling" href="modeling.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="/generalphysics/conservation/conservation.html" />
+<meta property="og:url"         content="/generalphysics/concepts/principles.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Conservation and Exchange" />
-<meta property="og:description" content="Conservation and Exchange  Energy-momentum  Collisions  Internal Energy  Background Potential Fields  Oscillations  Angular Momentum  RotationsEnergy-momentumCo" />
+<meta property="og:title"       content="Physical Principles" />
+<meta property="og:description" content="Physical Principles  Geometry, Spacetime, and Motion  Reference Frames and Proper Objects  Conserved Quantities from Symmetry  Spacetime Translation and Energy-" />
 <meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
 
 <meta name="twitter:card" content="summary" />
@@ -136,10 +136,32 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../concepts/concepts.html">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="concepts.html">
    1. Fundamental Concepts
   </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="structure.html">
+     1.1. Structure of the Physical World
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="modeling.html">
+     1.2. Formal Modeling
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     1.3. Physical Principles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="formalisms.html">
+     1.4. Formalisms
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../technical/technical.html">
@@ -151,8 +173,8 @@
    3. Describing Motion and its Causes
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../conservation/conservation.html">
    4. Conservation and Exchange
   </a>
  </li>
@@ -209,11 +231,11 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/conservation/conservation.ipynb"><button type="button"
+            href="../_sources/concepts/principles.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/conservation/conservation.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/concepts/principles.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -237,7 +259,7 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/justindressel/generalphysics/main?urlpath=tree/_build/html/conservation/conservation.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/justindressel/generalphysics/main?urlpath=tree/_build/html/concepts/principles.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -263,39 +285,68 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-momentum">
-   4.1. Energy-momentum
+  <a class="reference internal nav-link" href="#geometry-spacetime-and-motion">
+   1.3.1. Geometry, Spacetime, and Motion
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#collisions">
-   4.2. Collisions
+  <a class="reference internal nav-link" href="#reference-frames-and-proper-objects">
+   1.3.2. Reference Frames and Proper Objects
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#internal-energy">
-   4.3. Internal Energy
+  <a class="reference internal nav-link" href="#conserved-quantities-from-symmetry">
+   1.3.3. Conserved Quantities from Symmetry
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spacetime-translation-and-energy-momentum">
+     1.3.3.1. Spacetime Translation and Energy-momentum
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spatial-rotation-and-orbital-angular-momentum">
+     1.3.3.2. Spatial Rotation and Orbital Angular Momentum
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boost-acceleration-and-boost-angular-momentum">
+     1.3.3.3. Boost Acceleration and Boost Angular Momentum
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#translation-rotation-and-spin-angular-momentum">
+     1.3.3.4. Translation + Rotation and Spin Angular Momentum
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#invariants-as-particle-labels">
+   1.3.4. Invariants as Particle Labels
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#background-potential-fields">
-   4.4. Background Potential Fields
+  <a class="reference internal nav-link" href="#physical-action">
+   1.3.5. Physical Action
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#oscillations">
-   4.5. Oscillations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#angular-momentum">
-   4.6. Angular Momentum
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rotations">
-   4.7. Rotations
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#costs-of-motion-and-symmetries">
+     1.3.5.1. Costs of Motion and Symmetries
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stationary-cost-and-conservation">
+     1.3.5.2. Stationary Cost and Conservation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dynamics-from-stationary-cost">
+     1.3.5.3. Dynamics from Stationary Cost
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -308,28 +359,43 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         
               <div>
                 
-  <div class="section" id="conservation-and-exchange">
-<h1><span class="section-number">4. </span>Conservation and Exchange<a class="headerlink" href="#conservation-and-exchange" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="energy-momentum">
-<h2><span class="section-number">4.1. </span>Energy-momentum<a class="headerlink" href="#energy-momentum" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="physical-principles">
+<h1><span class="section-number">1.3. </span>Physical Principles<a class="headerlink" href="#physical-principles" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="geometry-spacetime-and-motion">
+<h2><span class="section-number">1.3.1. </span>Geometry, Spacetime, and Motion<a class="headerlink" href="#geometry-spacetime-and-motion" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="collisions">
-<h2><span class="section-number">4.2. </span>Collisions<a class="headerlink" href="#collisions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="reference-frames-and-proper-objects">
+<h2><span class="section-number">1.3.2. </span>Reference Frames and Proper Objects<a class="headerlink" href="#reference-frames-and-proper-objects" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="internal-energy">
-<h2><span class="section-number">4.3. </span>Internal Energy<a class="headerlink" href="#internal-energy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="conserved-quantities-from-symmetry">
+<h2><span class="section-number">1.3.3. </span>Conserved Quantities from Symmetry<a class="headerlink" href="#conserved-quantities-from-symmetry" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="spacetime-translation-and-energy-momentum">
+<h3><span class="section-number">1.3.3.1. </span>Spacetime Translation and Energy-momentum<a class="headerlink" href="#spacetime-translation-and-energy-momentum" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="background-potential-fields">
-<h2><span class="section-number">4.4. </span>Background Potential Fields<a class="headerlink" href="#background-potential-fields" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="spatial-rotation-and-orbital-angular-momentum">
+<h3><span class="section-number">1.3.3.2. </span>Spatial Rotation and Orbital Angular Momentum<a class="headerlink" href="#spatial-rotation-and-orbital-angular-momentum" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="oscillations">
-<h2><span class="section-number">4.5. </span>Oscillations<a class="headerlink" href="#oscillations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="boost-acceleration-and-boost-angular-momentum">
+<h3><span class="section-number">1.3.3.3. </span>Boost Acceleration and Boost Angular Momentum<a class="headerlink" href="#boost-acceleration-and-boost-angular-momentum" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="angular-momentum">
-<h2><span class="section-number">4.6. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="translation-rotation-and-spin-angular-momentum">
+<h3><span class="section-number">1.3.3.4. </span>Translation + Rotation and Spin Angular Momentum<a class="headerlink" href="#translation-rotation-and-spin-angular-momentum" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="rotations">
-<h2><span class="section-number">4.7. </span>Rotations<a class="headerlink" href="#rotations" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="invariants-as-particle-labels">
+<h2><span class="section-number">1.3.4. </span>Invariants as Particle Labels<a class="headerlink" href="#invariants-as-particle-labels" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="physical-action">
+<h2><span class="section-number">1.3.5. </span>Physical Action<a class="headerlink" href="#physical-action" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="costs-of-motion-and-symmetries">
+<h3><span class="section-number">1.3.5.1. </span>Costs of Motion and Symmetries<a class="headerlink" href="#costs-of-motion-and-symmetries" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="stationary-cost-and-conservation">
+<h3><span class="section-number">1.3.5.2. </span>Stationary Cost and Conservation<a class="headerlink" href="#stationary-cost-and-conservation" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="dynamics-from-stationary-cost">
+<h3><span class="section-number">1.3.5.3. </span>Dynamics from Stationary Cost<a class="headerlink" href="#dynamics-from-stationary-cost" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 </div>
 
@@ -346,7 +412,7 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./conservation"
+            path: "./concepts"
         },
         predefinedOutput: true
     }
@@ -361,8 +427,8 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../framework/framework.html" title="previous page"><span class="section-number">3. </span>Describing Motion and its Causes</a>
-    <a class='right-next' id="next-link" href="../newtonslaws/newtonslaws.html" title="next page"><span class="section-number">5. </span>Newtonian Mechanics</a>
+    <a class='left-prev' id="prev-link" href="modeling.html" title="previous page"><span class="section-number">1.2. </span>Formal Modeling</a>
+    <a class='right-next' id="next-link" href="formalisms.html" title="next page"><span class="section-number">1.4. </span>Formalisms</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

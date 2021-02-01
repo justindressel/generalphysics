@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4. Conservation and Exchange &#8212; General Physics</title>
+    <title>1.2. Formal Modeling &#8212; General Physics</title>
     
   <link rel="stylesheet" href="../_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
 
@@ -56,22 +56,22 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="/generalphysics/conservation/conservation.html" />
+    <link rel="canonical" href="/generalphysics/concepts/modeling.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Newtonian Mechanics" href="../newtonslaws/newtonslaws.html" />
-    <link rel="prev" title="3. Describing Motion and its Causes" href="../framework/framework.html" />
+    <link rel="next" title="1.3. Physical Principles" href="principles.html" />
+    <link rel="prev" title="1.1. Structure of the Physical World" href="structure.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="/generalphysics/conservation/conservation.html" />
+<meta property="og:url"         content="/generalphysics/concepts/modeling.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Conservation and Exchange" />
-<meta property="og:description" content="Conservation and Exchange  Energy-momentum  Collisions  Internal Energy  Background Potential Fields  Oscillations  Angular Momentum  RotationsEnergy-momentumCo" />
+<meta property="og:title"       content="Formal Modeling" />
+<meta property="og:description" content="Formal Modeling  Measurement, Precision, and Error  Systems, Subsystems, and Environments  Nested Levels of Description  Averaged Behavior and Coarse-graining  " />
 <meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
 
 <meta name="twitter:card" content="summary" />
@@ -136,10 +136,32 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../concepts/concepts.html">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="concepts.html">
    1. Fundamental Concepts
   </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="structure.html">
+     1.1. Structure of the Physical World
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     1.2. Formal Modeling
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="principles.html">
+     1.3. Physical Principles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="formalisms.html">
+     1.4. Formalisms
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../technical/technical.html">
@@ -151,8 +173,8 @@
    3. Describing Motion and its Causes
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../conservation/conservation.html">
    4. Conservation and Exchange
   </a>
  </li>
@@ -208,12 +230,9 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
     
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/conservation/conservation.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/conservation/conservation.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/concepts/modeling.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -232,26 +251,6 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 
         <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/justindressel/generalphysics/main?urlpath=tree/_build/html/conservation/conservation.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
     </div>
 
     <!-- Table of contents -->
@@ -263,38 +262,28 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#energy-momentum">
-   4.1. Energy-momentum
+  <a class="reference internal nav-link" href="#measurement-precision-and-error">
+   1.2.1. Measurement, Precision, and Error
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#collisions">
-   4.2. Collisions
+  <a class="reference internal nav-link" href="#systems-subsystems-and-environments">
+   1.2.2. Systems, Subsystems, and Environments
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#internal-energy">
-   4.3. Internal Energy
+  <a class="reference internal nav-link" href="#nested-levels-of-description">
+   1.2.3. Nested Levels of Description
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#background-potential-fields">
-   4.4. Background Potential Fields
+  <a class="reference internal nav-link" href="#averaged-behavior-and-coarse-graining">
+   1.2.4. Averaged Behavior and Coarse-graining
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#oscillations">
-   4.5. Oscillations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#angular-momentum">
-   4.6. Angular Momentum
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rotations">
-   4.7. Rotations
+  <a class="reference internal nav-link" href="#symmetries-constraints-and-conservation">
+   1.2.5. Symmetries, Constraints, and Conservation
   </a>
  </li>
 </ul>
@@ -308,28 +297,22 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         
               <div>
                 
-  <div class="section" id="conservation-and-exchange">
-<h1><span class="section-number">4. </span>Conservation and Exchange<a class="headerlink" href="#conservation-and-exchange" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="energy-momentum">
-<h2><span class="section-number">4.1. </span>Energy-momentum<a class="headerlink" href="#energy-momentum" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="formal-modeling">
+<h1><span class="section-number">1.2. </span>Formal Modeling<a class="headerlink" href="#formal-modeling" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="measurement-precision-and-error">
+<h2><span class="section-number">1.2.1. </span>Measurement, Precision, and Error<a class="headerlink" href="#measurement-precision-and-error" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="collisions">
-<h2><span class="section-number">4.2. </span>Collisions<a class="headerlink" href="#collisions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="systems-subsystems-and-environments">
+<h2><span class="section-number">1.2.2. </span>Systems, Subsystems, and Environments<a class="headerlink" href="#systems-subsystems-and-environments" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="internal-energy">
-<h2><span class="section-number">4.3. </span>Internal Energy<a class="headerlink" href="#internal-energy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nested-levels-of-description">
+<h2><span class="section-number">1.2.3. </span>Nested Levels of Description<a class="headerlink" href="#nested-levels-of-description" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="background-potential-fields">
-<h2><span class="section-number">4.4. </span>Background Potential Fields<a class="headerlink" href="#background-potential-fields" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="averaged-behavior-and-coarse-graining">
+<h2><span class="section-number">1.2.4. </span>Averaged Behavior and Coarse-graining<a class="headerlink" href="#averaged-behavior-and-coarse-graining" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="oscillations">
-<h2><span class="section-number">4.5. </span>Oscillations<a class="headerlink" href="#oscillations" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="angular-momentum">
-<h2><span class="section-number">4.6. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="rotations">
-<h2><span class="section-number">4.7. </span>Rotations<a class="headerlink" href="#rotations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="symmetries-constraints-and-conservation">
+<h2><span class="section-number">1.2.5. </span>Symmetries, Constraints, and Conservation<a class="headerlink" href="#symmetries-constraints-and-conservation" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -346,7 +329,7 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./conservation"
+            path: "./concepts"
         },
         predefinedOutput: true
     }
@@ -361,8 +344,8 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../framework/framework.html" title="previous page"><span class="section-number">3. </span>Describing Motion and its Causes</a>
-    <a class='right-next' id="next-link" href="../newtonslaws/newtonslaws.html" title="next page"><span class="section-number">5. </span>Newtonian Mechanics</a>
+    <a class='left-prev' id="prev-link" href="structure.html" title="previous page"><span class="section-number">1.1. </span>Structure of the Physical World</a>
+    <a class='right-next' id="next-link" href="principles.html" title="next page"><span class="section-number">1.3. </span>Physical Principles</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
