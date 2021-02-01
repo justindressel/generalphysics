@@ -44,25 +44,36 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="/generalphysics/introduction.html" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How to Use These Notes" href="howto.html" />
+    <link rel="next" title="How to Use These Notes" href="preface/howto.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="/generalphysics/introduction.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="General Physics: Supplementary Notes" />
+<meta property="og:description" content="General Physics: Supplementary Notes  These notes supplement the General Physics introductory course sequence at Chapman University. The sequence is designed to" />
+<meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
+
+<meta name="twitter:card" content="summary" />
 
 
   </head>
@@ -91,22 +102,30 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="#">
-   General Physics: Supplementary Notes
-  </a>
- </li>
-</ul>
-<p class="caption">
+  <p class="caption">
  <span class="caption-text">
   Preface
  </span>
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="howto.html">
+  <a class="reference internal" href="preface/howto.html">
    How to Use These Notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="preface/whyphys.html">
+   Why Study Physics?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="preface/succeed.html">
+   How to Succeed in Physics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="preface/physmap.html">
+   Map of Physics
   </a>
  </li>
 </ul>
@@ -272,8 +291,8 @@ Website: <a class="reference external" href="http://www.justindressel.com">http:
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "justindressel/generalphysics",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -296,7 +315,7 @@ Website: <a class="reference external" href="http://www.justindressel.com">http:
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="howto.html" title="next page">How to Use These Notes</a>
+    <a class='right-next' id="next-link" href="preface/howto.html" title="next page">How to Use These Notes</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

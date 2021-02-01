@@ -44,26 +44,37 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="/generalphysics/technical/technical.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3. Describing Motion and its Causes" href="../framework/framework.html" />
-    <link rel="prev" title="1. Fundamental Concepts" href="../concepts/concepts.html" />
+    <link rel="prev" title="1.4. Formalisms" href="../concepts/formalisms.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="/generalphysics/technical/technical.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Mathematics as Formal Language" />
+<meta property="og:description" content="Mathematics as Formal Language  In introductory physics we will regularly use algebra, trigonometry, geometry, and calculus to describe physical law precisely a" />
+<meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
+
+<meta name="twitter:card" content="summary" />
 
 
   </head>
@@ -92,22 +103,30 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../introduction.html">
-   General Physics: Supplementary Notes
-  </a>
- </li>
-</ul>
-<p class="caption">
+  <p class="caption">
  <span class="caption-text">
   Preface
  </span>
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../howto.html">
+  <a class="reference internal" href="../preface/howto.html">
    How to Use These Notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface/whyphys.html">
+   Why Learn Physics?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface/succeed.html">
+   How to Succeed in Physics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface/physmap.html">
+   Map of Physics
   </a>
  </li>
 </ul>
@@ -218,7 +237,7 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/justindressel/generalphysics/master?urlpath=tree/technical/technical.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/justindressel/generalphysics/main?urlpath=tree/_build/html/technical/technical.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -226,6 +245,9 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -293,6 +315,8 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
                 
   <div class="section" id="mathematics-as-formal-language">
 <h1><span class="section-number">2. </span>Mathematics as Formal Language<a class="headerlink" href="#mathematics-as-formal-language" title="Permalink to this headline">¶</a></h1>
+<p>In introductory physics we will regularly use <strong>algebra</strong>, <strong>trigonometry</strong>, <strong>geometry</strong>, and <strong>calculus</strong> to describe physical law precisely and solve problems rigorously. You will need to remember all of these intersecting mathematical topics and be able to use them with mastery. This supplementary section is designed to help you review these topics to make sure that you have an adequate background before tackling quantitative formulations of the core physical ideas. Mastery will follow from practice.</p>
+<p>Later physics courses will add more advanced mathematical tools that build upon the basics, such as differential equations, complex analysis, probability theory, differential geometry, variational calculus, functional analysis, topology, and beyond. These more advanced mathematical tools and their associated computational extensions form the backbone of any rigorous modeling discipline.</p>
 <div class="section" id="symbols-algebra-and-units">
 <h2><span class="section-number">2.1. </span>Symbols, Algebra, and Units<a class="headerlink" href="#symbols-algebra-and-units" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -323,8 +347,8 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "justindressel/generalphysics",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -347,7 +371,7 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../concepts/concepts.html" title="previous page"><span class="section-number">1. </span>Fundamental Concepts</a>
+    <a class='left-prev' id="prev-link" href="../concepts/formalisms.html" title="previous page"><span class="section-number">1.4. </span>Formalisms</a>
     <a class='right-next' id="next-link" href="../framework/framework.html" title="next page"><span class="section-number">3. </span>Describing Motion and its Causes</a>
 
     </div>

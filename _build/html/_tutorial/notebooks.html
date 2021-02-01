@@ -50,11 +50,12 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="/generalphysics/_tutorial/notebooks.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -62,6 +63,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="/generalphysics/_tutorial/notebooks.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Content with notebooks" />
+<meta property="og:description" content="Content with notebooks  You can also create content with Jupyter Notebooks. This means that you can include code blocks and their outputs in your book.  Markdow" />
+<meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
+
+<meta name="twitter:card" content="summary" />
 
 
   </head>
@@ -213,7 +223,7 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/justindressel/generalphysics/master?urlpath=tree/_tutorial/notebooks.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/justindressel/generalphysics/main?urlpath=tree/_build/html/_tutorial/notebooks.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -221,11 +231,14 @@ Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/justindressel/generalphysics/blob/master/_tutorial/notebooks.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/justindressel/generalphysics/blob/main/_build/html/_tutorial/notebooks.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
                     src="../_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -345,8 +358,8 @@ with your book. For more information about this, see <a class="reference externa
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "justindressel/generalphysics",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",

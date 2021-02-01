@@ -1,0 +1,717 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.1. Structure of the Physical World &#8212; General Physics</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.bfb7730f9caf2ec0b46a44615585038c.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.30270b6e4c972e43c488.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="/generalphysics/concepts/structure.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1.2. Formal Modeling" href="modeling.html" />
+    <link rel="prev" title="1. Fundamental Concepts" href="concepts.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="/generalphysics/concepts/structure.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Structure of the Physical World" />
+<meta property="og:description" content="Structure of the Physical World  Physics is no less than the study of what everything around us is made out of and how it works, from the tiniest pieces of the " />
+<meta property="og:image"       content="/generalphysics/_static/cradle.gif" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/cradle.gif" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">General Physics</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Preface
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface/howto.html">
+   How to Use These Notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface/whyphys.html">
+   Why Learn Physics?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface/succeed.html">
+   How to Succeed in Physics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface/physmap.html">
+   Map of Physics
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  PHYS 101
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="concepts.html">
+   1. Fundamental Concepts
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     1.1. Structure of the Physical World
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="modeling.html">
+     1.2. Formal Modeling
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="principles.html">
+     1.3. Physical Principles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="formalisms.html">
+     1.4. Formalisms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../technical/technical.html">
+   2. Mathematics as Formal Language
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../framework/framework.html">
+   3. Describing Motion and its Causes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../conservation/conservation.html">
+   4. Conservation and Exchange
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../newtonslaws/newtonslaws.html">
+   5. Newtonian Mechanics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../relativity/relativity.html">
+   6. Einsteinian Mechanics
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.chapman.edu/physics">Chapman University Physics</a><br/>
+<a href="https://quantum.chapman.edu">Institute for Quantum Studies</a><br/>
+Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/concepts/structure.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-standard-model">
+   1.1.1. The Standard Model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-brief-history-of-physical-discoveries">
+   1.1.2. A Brief History of Physical Discoveries
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#elements">
+     1.1.2.1. Elements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#atoms-molecules-solids-liquids-and-gases">
+     1.1.2.2. Atoms, Molecules, Solids, Liquids, and Gases
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#light-as-electromagnetic-waves">
+     1.1.2.3. Light as Electromagnetic Waves
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#light-as-photons">
+     1.1.2.4. Light as Photons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subatomic-structure">
+     1.1.2.5. Subatomic Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nuclear-structure">
+     1.1.2.6. Nuclear Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#antimatter">
+     1.1.2.7. Antimatter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#weak-interaction">
+     1.1.2.8. Weak Interaction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrinos">
+     1.1.2.9. Neutrinos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#muons">
+     1.1.2.10. Muons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hadrons-baryons-mesons-quarks-and-subnuclear-structure">
+     1.1.2.11. Hadrons, Baryons, Mesons, Quarks, and Subnuclear Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#higgs-mechanism">
+     1.1.2.12. Higgs Mechanism
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#electroweak-unification">
+     1.1.2.13. Electroweak Unification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tauons">
+     1.1.2.14. Tauons
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-standard-model-revisited">
+   1.1.3. The Standard Model Revisited
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quanta">
+     1.1.3.1. Quanta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interactions-fundamental-forces">
+     1.1.3.2. Interactions / Fundamental Forces
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#particles-and-fields">
+   1.1.4. Particles and Fields
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stable-elements-and-the-periodic-table">
+   1.1.5. Stable Elements and the Periodic Table
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stellar-systems-and-cosmology">
+   1.1.6. Stellar Systems and Cosmology
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="structure-of-the-physical-world">
+<h1><span class="section-number">1.1. </span>Structure of the Physical World<a class="headerlink" href="#structure-of-the-physical-world" title="Permalink to this headline">¶</a></h1>
+<p><strong>Physics</strong> is no less than the study of what everything around us is made out of and how it works, from the tiniest pieces of the microscopic world to the vast stretches of the cosmos. The scope and ambition of such a study is so enormous that it can be bewildering to know where to start. Indeed, the historical path towards our current understanding has been long and winding, with many fascinating twists and dead-ends.</p>
+<p>A particularly productive strategy for achieving physical understanding has been to systematically break down the seemingly complicated and ineffable world we see around us into its most basic pieces. The idea is that after understanding the simplest pieces, more complicated arrangements of those pieces can then be tackled. Such a “divide and conquer” strategy for grounding our understanding follows a philosophy known as <strong>reductionism</strong>.</p>
+<p>A reductionistic endeavor is akin to taking apart a watch or other piece of technology to identify and categorize all its most basic parts, then reassembling it again to gain insight into how those parts work together to create the whole. We don’t achieve a full understanding of the complicated whole from its pieces alone, but we gain rich insight into the basic mechanisms for how the pieces must fit together to produce that whole. Reductionism has been an incredibly pragmatic and productive perspective for the study of physics. It provides a firm foundation for building nuanced understanding of larger and more complicated physical scenarios.</p>
+<div class="section" id="the-standard-model">
+<h2><span class="section-number">1.1.1. </span>The Standard Model<a class="headerlink" href="#the-standard-model" title="Permalink to this headline">¶</a></h2>
+<p>Over the past several hundred years, we have managed to reduce all that we see around us to a shockingly small number of “fundamental” things. They are fundamental in the sense that they do not appear to have any further substructure, at least that we have been able to observe so far. These fundamental pieces form <strong>The Standard Model</strong> of our physical world and describe not only the substance we see around us (called <strong>matter</strong>) but also the ways those substances can change (called <strong>interactions</strong>).</p>
+<p>The Standard Model has been verified in <em>high-energy physics experiments</em> using <em>colliders</em> that quite literally smash objects together at faster and faster speeds to see what smaller pieces fly out of the collision to impact <em>detectors</em> placed around the collision location. The most stringent recent tests have been performed at the <a class="reference external" href="https://home.cern/science/accelerators/large-hadron-collider">Large Hadron Collider (LHC)</a>. Remarkably, there have been <em>almost no significant discrepancies</em> between the predictions of the Standard Model and the unprecedented amount of data collected at the LHC since 2008 (<a class="reference external" href="https://home.cern/science/computing/data-preservation">over 330 million Gigabytes</a> so far). Indeed, most theoretical proposals for going beyond the Standard Model have either been ruled out entirely or made much less plausible by the experimental data. <em>The Standard Model is thus the most well-tested and well-verified reductionist physical model in human history.</em></p>
+<p>Everything we see around us, including the material objects we bump into, the water we drink, the air we breathe, and the sunlight we bask in, can be reduced to the fundamental pieces of the Standard Model. All the chemical elements in the Periodic Table are formed from more basic pieces in the Standard Model. All the forces, electrical power, nuclear radiation, internet data streams, and other physical phenomena around us arise from the behavior of the pieces in the Standard Model.</p>
+<p>Despite the vast scope of its explanatory power, the Standard Model is concise enough to be summarized in a small diagram:</p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles_%2B_Gravity.svg#/media/File:Standard_Model_of_Elementary_Particles_+_Gravity.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Standard_Model_of_Elementary_Particles_%2B_Gravity.svg/1200px-Standard_Model_of_Elementary_Particles_%2B_Gravity.svg.png" alt="Standard Model of Elementary Particles + Gravity.svg"></a></p>
+While we will unpack this table in more detail later, but the following video provides a fun initial tour of the basic components of the Standard Model for now:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ehHoOYqAT_U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section" id="a-brief-history-of-physical-discoveries">
+<h2><span class="section-number">1.1.2. </span>A Brief History of Physical Discoveries<a class="headerlink" href="#a-brief-history-of-physical-discoveries" title="Permalink to this headline">¶</a></h2>
+<p>To help give some context behind the construction of this remarkably compact description of the world, let us review a brief and selective history of scientific discoveries in physics over the past century:</p>
+<div class="section" id="elements">
+<h3><span class="section-number">1.1.2.1. </span>Elements<a class="headerlink" href="#elements" title="Permalink to this headline">¶</a></h3>
+<p>By around 1900CE <strong>chemists</strong> and <strong>physicists</strong> had reduced the complexity of all material substance (or <strong>matter</strong>) that we see to a set of basic <strong>elements</strong>, like gold, silver, copper, iron, carbon, and hydrogen. Each of these elements had been identified and refined throughout history in more and more pure forms. Their reactions and interactions had been studied extensively by alchemists and chemists, while their mechanical and thermodynamical properties had been investigated by physicists.</p>
+<p>In 1869, the chemist Mendeleev began arranging the 64 elements known at that time into a table based on periodicities he observed in how the various elements reacted chemically. This initial table, and similar concurrent efforts, were then successively refined by Wilson and other chemists such that by 1905 a 32-column form of the (then 84) basic elements had reached a relatively stable form. This table is now known as the <a class="reference external" href="https://www.scientificamerican.com/article/chemistry-the-elements-revealed-interactive-periodic-table/"><strong>Periodic Table of the Elements</strong></a>, which has now merged our best physical and chemical understandings of the elements into one comprehensive and informative display.</p>
+<p><a title="Sandbh, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Taxonomic_PT_wth_halogens.jpg"><img width="512" alt="Taxonomic PT wth halogens" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Taxonomic_PT_wth_halogens.jpg/512px-Taxonomic_PT_wth_halogens.jpg"></a></p>
+<p>As of 2019, we have verified <strong>118 distinct elements</strong>. The <em>92</em> elements up through Uranium occur naturally, while the remaining “transuranic” elements are <em>unstable</em> and thus exist only temporarily in laboratory settings before decaying to other elements.</p>
+<p><a title="El Snubbe, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Known-elements-1650-present.png"><img width="512" alt="Known-elements-1650-present" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Known-elements-1650-present.png/512px-Known-elements-1650-present.png"></a></p>
+<p>Though it was initially unclear why, the periodic table approximately splits naturally into a set of “blocks” with distinct chemical behavior. These blocks are now traditionally labeled “s”, “p”, “d”, and “f” to match prior labels of their spectroscopic emission lines as “sharp”, “principle”, “diffuse”, and “fundamental.”</p>
+<p><a title="User:DePiep, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Periodic_table_blocks_spdf_(32_column).svg"><img width="512" alt="Periodic table blocks spdf (32 column)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Periodic_table_blocks_spdf_%2832_column%29.svg/512px-Periodic_table_blocks_spdf_%2832_column%29.svg.png"></a></p>
+</div>
+<div class="section" id="atoms-molecules-solids-liquids-and-gases">
+<h3><span class="section-number">1.1.2.2. </span>Atoms, Molecules, Solids, Liquids, and Gases<a class="headerlink" href="#atoms-molecules-solids-liquids-and-gases" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The word <em>atom</em> comes from Greek <span class="math notranslate nohighlight">\(\check{\alpha}\tau\omicron\mu\omicron\varsigma\)</span> (atomos), meaning “indivisible.”</p>
+</div>
+</div>
+<p>The origins of the elements were unknown, so they were (erroneously) treated as fundamental. However, it was observed that each element had a “smallest piece” that could be isolated, such that larger chunks of that element were composed of many such pieces. Following Greek philosophy, these indivisible pieces of the elements were called <strong>atoms</strong>.</p>
+<p>Small collections of atoms being held together by (electromagnetic) bonds are called <strong>molecules</strong>. Larger collections of atoms and molecules form various <strong>phases/states of matter</strong>, the most common of which are <strong>gases</strong>, <strong>liquids</strong>, and <strong>solids</strong>. The <strong>macroscopic</strong> distinctions between the states of matter correspond to <strong>microscopic</strong> features of the atoms and molecules, such as how close the molecules are to each other (pressure) and how rapidly they are moving/vibrating (temperature). Changing these microscopic features produces <strong>phase transitions</strong> between the different states of matter.</p>
+<img alt="https://www.helioseducore.com/wp-content/uploads/2019/01/states-of-matter-PNG-e1548859104853.png" src="https://www.helioseducore.com/wp-content/uploads/2019/01/states-of-matter-PNG-e1548859104853.png" />
+<p>The molecules in solid <strong>crystals</strong> are close together and jiggling slowly, so form tightly ordered lattice structures. Such crystals tend to be <strong>periodic</strong> with particular lengths along distinct directions, or <strong>quasi-periodic</strong> with multiple nested periodicities of different atomic types interspersed.</p>
+<p><a title="Prolineserver, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:2d-bravais.svg"><img width="512" alt="2d-bravais" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/2d-bravais.svg/512px-2d-bravais.svg.png"></a></p>
+<p>For example, the following picture (from a scanning transmission electron microscope) shows interspersed cubic lattices of Strontium atoms (lighter color) and Titanium atoms (darker color):</p>
+<p><a title="Materialscientist, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Stohrem.jpg"><img width="256" alt="Stohrem" src="https://upload.wikimedia.org/wikipedia/commons/6/68/Stohrem.jpg"></a></p>
+<p>Molecules in <strong>liquids</strong> are more loosely bound so form disordered and non-periodic arrangements that can flow and deform to fill the shapes of containers. Puzzlingly, molecules in <strong>glasses</strong> are similarly disordered but more tightly bound with widely varying and quasi-solid properties that are difficult to predict. Understanding glasses better is still an <a class="reference external" href="https://www.quantamagazine.org/ideal-glass-would-explain-why-glass-exists-at-all-20200311/">active research topic</a> in “condensed matter physics” and “materials science.”</p>
+<img alt="https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/03/IdealGlass_560rv2.jpg" src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/03/IdealGlass_560rv2.jpg" />
+<p>The molecules in <strong>gases</strong> are rapidly moving and diffuse so fly around individually to bounce off each other at high speeds, thus filling and bouncing off all interior surfaces of closed containers.</p>
+<p>The way that a state of matter changes when qualities like pressure and temperature are varied is quite complicated, as illustrated in the following <strong>phase diagram</strong> for the behavior of water. Though simple transitions like melting, freezing, evaporation, and condensation are well-known in daily life near standard atmospheric pressure, more exotic things can happen at higher and lower pressures.</p>
+<p><a title="Matthieumarechal, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Phase-diag2.svg"><img width="512" alt="Phase-diag2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Phase-diag2.svg/512px-Phase-diag2.svg.png"></a></p>
+<p>More exotic phases of matter like <strong>plasmas</strong>, <strong>superfluids</strong>, and <strong>condensates</strong> require a more detailed understanding of atomic structure that goes beyond simple atomic and molecular structure and motion.</p>
+</div>
+<div class="section" id="light-as-electromagnetic-waves">
+<h3><span class="section-number">1.1.2.3. </span>Light as Electromagnetic Waves<a class="headerlink" href="#light-as-electromagnetic-waves" title="Permalink to this headline">¶</a></h3>
+<p>Concurrently with the development of the Periodic Table, physicists had been developing the theories of <strong>electricity</strong>, <strong>magnetism</strong>, and <strong>optics</strong> during the 1800’s. Shockingly, all three investigations were unified into a single theory of <strong>electromagnetism</strong> by Maxwell in 1862, which was fully verified experimentally by 1890. Rather than being distinct physical effects, electricity, magnetism, and light were all manifestations of the same fundamental thing. Notably, Maxwell established that <strong>light</strong> was an electromagnetic <strong>wave</strong> that was self-generating as it propagated through space at a fixed speed <span class="math notranslate nohighlight">\(c\)</span> (which will become an important speed later).</p>
+<p>We now understand that the natural <strong>modes</strong> of electromagnetic wave propagation are helical (or <strong>circularly polarized</strong>). In such a wave, both electric and magnetic parts orbit around an axis of propagation. These directional parts of the wave push any electric charges and currents they encounter.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In movie theaters, 3D glasses work by filtering out right- and left-handed circularly polarized light so that each eye receives a different image after the light is bounced off the screen.</p>
+</div>
+</div>
+<p><a title="Dave3457, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Circular.Polarization.Circularly.Polarized.Light_Right.Handed.Animation.305x190.255Colors.gif"><img width="256" alt="Circular.Polarization.Circularly.Polarized.Light Right.Handed.Animation.305x190.255Colors" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Circular.Polarization.Circularly.Polarized.Light_Right.Handed.Animation.305x190.255Colors.gif"></a></p>
+<p>If we <strong>superpose</strong> two oppositely handed helical waves (by placing one on top of the other) they <strong>interfere</strong> to produce a <strong>linearly polarized</strong> wave. In such a wave, the electric and magnetic parts oscillate along perpendicular lines so that the electric and magnetic parts of the wave can be more easily distinguished.</p>
+<p><a title="And1mu, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:EM-Wave.gif"><img width="512" alt="EM-Wave" src="https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif"></a></p>
+<p>The spatial distance between wave crests is the <strong>wavelength</strong> (<span class="math notranslate nohighlight">\(\lambda\)</span>) of the light wave, while the temporal delay between successive crests reaching a fixed position is the <strong>period</strong> (<span class="math notranslate nohighlight">\(T\)</span>) of the light wave. Similarly, the <strong>spatial frequency</strong> (<span class="math notranslate nohighlight">\(k\)</span>) (or <strong>wave number</strong>) is the number of wavelengths that fit in a particular length, while the <strong>temporal frequency</strong> (<span class="math notranslate nohighlight">\(\nu\)</span>) (or just <strong>frequency</strong>) is the number of periods that fit in a particular duration (usually one second). The wavelength <span class="math notranslate nohighlight">\(\lambda\)</span> and frequency <span class="math notranslate nohighlight">\(\nu\)</span> of a wave are naturally related by its constant speed: <span class="math notranslate nohighlight">\(c = \lambda \nu\)</span>. The different wavelengths and frequencies that light can have form an <strong>electromagnetic spectrum</strong>.</p>
+<p><a title="Philip Ronan, Gringer, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:EM_spectrumrevised.png"><img width="800" alt="EM spectrumrevised" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/EM_spectrumrevised.png/512px-EM_spectrumrevised.png"></a></p>
+<p>The electromagnetic spectrum contains a wide range of seemingly different phenomena, ranging from <strong>radio</strong> waves (like in your car) to <strong>microwaves</strong> (like in your kitchen) to <strong>infrared</strong> (like radiative heat from stoves) to <strong>visible light</strong> (like the entire rainbow your eyes can see) to <strong>ultraviolet</strong> light (that causes sunburns) to <strong>X-rays</strong> (like those at the hospital) to <strong><span class="math notranslate nohighlight">\(\gamma\)</span>-(gamma)-rays</strong> (like the cosmic rays that hit Earth from deep space). As electromagnetic waves, their only difference is their wavelength and frequency.</p>
+</div>
+<div class="section" id="light-as-photons">
+<h3><span class="section-number">1.1.2.4. </span>Light as Photons<a class="headerlink" href="#light-as-photons" title="Permalink to this headline">¶</a></h3>
+<p>In 1900, Planck noted that <strong>light</strong> was not only an electromagnetic wave, but also must be composed of small discrete chunks that he called <strong>quanta</strong> (or the smallest quantities). Arguing from the perspective of blackbody radiation and thermodynamics, Planck postulated a universal constant <span class="math notranslate nohighlight">\(h\)</span> that relates the <em>frequency</em> <span class="math notranslate nohighlight">\(\nu\)</span> of a photon to its <em>energy</em> <span class="math notranslate nohighlight">\(E\)</span> as <span class="math notranslate nohighlight">\(E = h\nu\)</span>. Rather than smoothly transitioning from bright light to darkness, light becomes <em>lumpy</em> when it is sufficiently dim. Planck won the Nobel prize for this discovery in 1918. The quanta of light later became known as <strong>photons</strong>.</p>
+<p>These photons were initially detected because each absorbed packet of light scatters electrons off a metal detector in proportion to the <em>frequency</em> and not the brightness of the light, which creates curious threshold effects in observed currents. Einstein made this connection between frequency of photons and the resulting electron energy of metals in 1905, called the <strong>photoelectric effect</strong>, which later won him the Nobel prize in 1921.</p>
+<p>Importantly, the connection between frequency and photon energy means that the <strong>electromagnetic frequency spectrum</strong> can be read equivalently as an <strong>energy spectrum</strong> for the photons composing the electromagnetic waves. Different forms of <strong>electromagnetic radiation</strong> arise from distinct photon energies, with high energy photons corresponding to high frequency (and short wavelength) waves and low energy photons corresponding to low frequency (and long wavelength) waves. The higher the photon energy, the harder it is to create many of them, which is why higher-energy X-rays and gamma-rays tend to behave more like individual photons rather than waves containing billions of them.</p>
+<p><a title="Dinksbumf, Inductiveload, NASA, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Electromagnetic_spectrum_with_sources.svg"><img width="800" alt="Electromagnetic spectrum with sources" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Electromagnetic_spectrum_with_sources.svg/512px-Electromagnetic_spectrum_with_sources.svg.png"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Electronic detectors have now become sensitive enough to see individual photons of light being absorbed in real time. The following image from 2014 is an <a class="reference external" href="https://doi.org/10.1364/JOSAB.31.000816">oscilloscope trace from a superconducting nanowire</a> acting as a photon counter. The clearly separated spikes correspond to individual photon absorptions being counted.</p>
+<p><a href="https://www.researchgate.net/figure/a-Single-shot-oscilloscope-trace-of-the-SNSPD-system-under-the-illumination-of-the_fig1_262982714"><img src="https://www.researchgate.net/profile/L-You/publication/262982714/figure/fig1/AS:405230098370560@1473625792992/a-Single-shot-oscilloscope-trace-of-the-SNSPD-system-under-the-illumination-of-the.png" alt="(a) Single-shot oscilloscope trace of the SNSPD system under the illumination of the femtosecond pulsed laser diode. The average photon number per pulse before the fiber splitter was set to 100. (b) Typical voltage pulses corresponding to responses for 1–4 photons . Inset: measured (black dots) and fitted (solid pink line) pulse height distribution using the multichannel SNSPD system."/></a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Digital cameras, such as in your smartphone, are now so sensitive that they must understand light at the level of individual photons to get a clean image. That is, <a class="reference external" href="http://fromcameratoprint.com/FAQs/howadigitalsenso.html">the camera sensor is divided up into a grid</a> of <strong>pixels</strong> that can each absorb individual photons. Each pixel has a red, green, or blue filter on it, so it only allows one color (frequency) of photon to be absorbed. When an image is taken, the sensor collects individual photons for a short duration of time, then records the discrete chunks of voltage produced by the integer number of photons absorbed by each pixel in the array. Later on, this pixel count data is processed and weighted by the red/green/blue filter information to reconstruct larger “color pixels” that form the entire image.</p>
+<img alt="http://fromcameratoprint.com/FAQs/Resources/partsensor.jpeg" src="http://fromcameratoprint.com/FAQs/Resources/partsensor.jpeg" />
+</div>
+</div>
+<div class="section" id="subatomic-structure">
+<h3><span class="section-number">1.1.2.5. </span>Subatomic Structure<a class="headerlink" href="#subatomic-structure" title="Permalink to this headline">¶</a></h3>
+<p>By the early 1900’s it also became clear that there must also be substructure to each atom in the periodic table. In 1897 Thomson provided conclusive evidence of isolated and negatively charged <strong>electrons</strong> that were smaller than the elements of the Periodic Table, and thus <strong>subatomic</strong> in structure. This implied that atoms could be decomposed into electrons and complementary positively charged <strong>nuclei</strong>, but it was initially unclear what form such nuclei would take.</p>
+<p>In 1911 Rutherford determined nuclear structure by scattering radiated alpha particles off gold foil. If the positive charge was evenly spread throughout the atom (as people initially expected), then the scatter would be weak. However, Rutherford found that a small number of particles scattered straight back as if they hit a dense wall. This finding implied that <em>the majority of each atom must be empty space, with a tiny dense core of positive charge</em>. The electrons inhabited a diffuse cloud surrounding this tiny dense nuclear core, as in the Helium atom illustrated below.</p>
+<p><a title="User:Yzmo, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Helium_atom_QM.svg"><img width="512" alt="Helium atom QM" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Helium_atom_QM.svg/512px-Helium_atom_QM.svg.png"></a></p>
+<p>The theoretical framework of <strong>quantum mechanics</strong> was developed by physicists over the next decade to explain how this subatomic structure could possibly exist as a stable configuration. The development led to an explanation of electron <strong>orbitals</strong> (or <strong>shells</strong>) that corresponded precisely to the block structure in the Periodic Table of the elements. <em>The subjects of physics and chemistry had merged into physical chemistry (or chemical physics) since quantum mechanics now provided a physical explanation for the observed chemical structure and phenomena.</em></p>
+<p>Each chemical shell corresponds to a spatial configuration of how the electrons arrange themselves around the nucleus. As an example, the plots below visualize <a class="reference external" href="https://www.thoughtco.com/angular-momentum-quantum-numbers-606461">electron shells (n,l,m)</a> for a Hydrogen atom, where n=0 is the “s”-shell, n=1 are the 3 “p”-shells, n=2 are the 5 “d”-shells, n=3 are the 7 “f”-shells, and so on. Each shell fits two electrons such that they have opposite directions of a new property called <strong>spin</strong>, which produces the observed block structure in the Periodic Table.</p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Hydrogen_Density_Plots.png#/media/File:Hydrogen_Density_Plots.png"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Hydrogen_Density_Plots.png" alt="Hydrogen Density Plots.png" height="1080" width="1188"></a></p>
+<p>The negative electron charges and positive nucleus charges balance out to zero for each stable atom, like the Hydrogen atom centered below. However, electrons can be stripped away from or added to the nuclei, created charged <strong>ions</strong>. Positively charged ions are called <strong>cations</strong> while negatively charged ions are called <strong>anions</strong>.
+<a title="Jkwchui, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Ions.svg"><img width="512" alt="Ions" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Ions.svg/512px-Ions.svg.png"></a></p>
+<p>Diffuse collections of ions and free electrons form the state of matter known as a <strong>plasma</strong>, which we observe in flames, fluorescent lights, stars, or near Tesla coils like the animations below.</p>
+<img alt="https://i.gifer.com/72LD.gif" src="https://i.gifer.com/72LD.gif" />
+</div>
+<div class="section" id="nuclear-structure">
+<h3><span class="section-number">1.1.2.6. </span>Nuclear Structure<a class="headerlink" href="#nuclear-structure" title="Permalink to this headline">¶</a></h3>
+<p>Nuclei further decompose into clusters of positively charged particles called <strong>protons</strong> (found in 1917) and uncharged particles called <strong>neutrons</strong> (found in 1920). The various <strong>atomic isotopes</strong> were found to have the same number of protons and electrons (and thus have identical chemistry), but differing numbers of neutrons.</p>
+<p>Most isotopes are unstable and decay back to stable configurations by emitting <strong>radiation</strong>. The image below shows the three types of nuclear radiation: alpha (emitting a helium nucleus), beta (emitting an electron), and gamma (emitting a photon).</p>
+<img alt="http://teachers.yale.edu/curriculum/extra/images/2019/19.04.09.02.jpg" src="http://teachers.yale.edu/curriculum/extra/images/2019/19.04.09.02.jpg" />
+</div>
+<div class="section" id="antimatter">
+<h3><span class="section-number">1.1.2.7. </span>Antimatter<a class="headerlink" href="#antimatter" title="Permalink to this headline">¶</a></h3>
+<p>In 1932 electrons were found to have an “antiparticle” known as a <strong>positron</strong>, that had all the same properties but reversed such that when it collided with an electron they annihilated into light (photons). The development of the theoretical framework of <strong>relativistic quantum mechanics</strong> by Dirac predicted the existence of the positron, which was later confirmed experimentally. Later it was found that all matter particles have corresponding antiparticle partners.</p>
+</div>
+<div class="section" id="weak-interaction">
+<h3><span class="section-number">1.1.2.8. </span>Weak Interaction<a class="headerlink" href="#weak-interaction" title="Permalink to this headline">¶</a></h3>
+<p>In 1933 a new type of interaction called the weak interaction was postulated to account for the decay of isotopes that produced radiation. To account for the creation and annihilation of particles that occur during radiation decay, the theoretical framework of <strong>relativistic quantum field theory</strong> was developed, which is still the most successful physics framework. The <strong>Standard Model</strong> that accounts for all fundamentals we have been able to observe is expressed in the framework of relativistic quantum field theory.</p>
+</div>
+<div class="section" id="neutrinos">
+<h3><span class="section-number">1.1.2.9. </span>Neutrinos<a class="headerlink" href="#neutrinos" title="Permalink to this headline">¶</a></h3>
+<p>In 1934 a new particle called a <strong>neutrino</strong> was postulated due to a small amount of missing energy after a radiative decay. This particle was detected in 1943.</p>
+</div>
+<div class="section" id="muons">
+<h3><span class="section-number">1.1.2.10. </span>Muons<a class="headerlink" href="#muons" title="Permalink to this headline">¶</a></h3>
+<p>In 1936 an unexpected new particle called a <strong>muon</strong> was detected that looked identical to an electron but was much heavier. It was also unstable and decayed into more stable particles. Its identity was not fully understood until the late 1960s, after which an associated <strong>muon-neutrino</strong> was postulated (and finally detected in 1968).</p>
+</div>
+<div class="section" id="hadrons-baryons-mesons-quarks-and-subnuclear-structure">
+<h3><span class="section-number">1.1.2.11. </span>Hadrons, Baryons, Mesons, Quarks, and Subnuclear Structure<a class="headerlink" href="#hadrons-baryons-mesons-quarks-and-subnuclear-structure" title="Permalink to this headline">¶</a></h3>
+<p>Investigations of radiation, isotopes, and the results of smashing particles together in energetic <strong>particle accelerators</strong> from the 1930’s onward revealed many new types of particles called <strong>hadrons</strong> that were also not part of the periodic table. So many hadrons were discovered in fact that the collection of hundreds of new particles became known as a “particle zoo” that baffled people for decades.</p>
+<p>In 1964 it finally became clear that protons, neutrons, and all the hadrons could themselves be decomposed into even smaller pieces known as <strong>quarks</strong>. The image below shows the dramatic differences in size scales for the various “sub-atomic” constituents of an atom.</p>
+<img alt="https://d83a48be-a-62cb3a1a-s-sites.googlegroups.com/site/csetstudyguidechemistry/home/1-2c---atomic-structure/fig-1g-relative-sizes-of-atom-quark.jpg?attachauth=ANoY7cqQIo8gM52-quuq1u6tbADCbH-3YnCG6f_bNEXo8AKMO375io-C3YUIh89LpiH6LSJdjorCh50q8LRJERCg3oMf0PwifoqX-WGWC486phstcdJ8s9WgwqQkNv2HSGb_VnoieugFUH4U4Q5ypF0hnmotnDLVpZUDut9-IvhlrBNScmwhCcj_UjoX8NZcTxy1HeAwvrcC564rK7u9nzzUIJwUBmC_60azNWIYtnU-4La8D-DEntvZ9_uqqsBYlziJGLFUAKbkxLLPSrswfjya9a8mHB_gLy-X-AoVbuZLYDTCOaajiEw%3D&amp;attredirects=0" src="https://d83a48be-a-62cb3a1a-s-sites.googlegroups.com/site/csetstudyguidechemistry/home/1-2c---atomic-structure/fig-1g-relative-sizes-of-atom-quark.jpg?attachauth=ANoY7cqQIo8gM52-quuq1u6tbADCbH-3YnCG6f_bNEXo8AKMO375io-C3YUIh89LpiH6LSJdjorCh50q8LRJERCg3oMf0PwifoqX-WGWC486phstcdJ8s9WgwqQkNv2HSGb_VnoieugFUH4U4Q5ypF0hnmotnDLVpZUDut9-IvhlrBNScmwhCcj_UjoX8NZcTxy1HeAwvrcC564rK7u9nzzUIJwUBmC_60azNWIYtnU-4La8D-DEntvZ9_uqqsBYlziJGLFUAKbkxLLPSrswfjya9a8mHB_gLy-X-AoVbuZLYDTCOaajiEw%3D&amp;attredirects=0" />
+<p>Remarkably, all particles in the zoo were found to be various combinations of only <strong>6 basic quarks</strong> (and their antiquarks) composed of three similar pairs: <strong>(up, down)</strong>, <strong>(charm, strange)</strong>, <strong>(top, bottom)</strong>. The last of the quarks were confirmed experimentally by 1977. Interestingly, the quarks had fractional electric charge (+2/3 electron charge for <em>up</em>, or -1/3 electron charge for <em>down</em>) and also had a new type of <strong>3-valued color-charge</strong> (with values “red”, “green”, “blue” such that the sum of all three was a neutral “white”). The hadrons known as <strong>mesons</strong> were found to be quark-antiquark pairs, while the hadrons known as <strong>baryons</strong> were found to be collections of three quarks with a net neutral color charge. Importantly, the most common baryons were the <strong>proton (composed of up, up, down)</strong> and the <strong>neutron (composed of up, down, down)</strong>. The quarks were held together by exchanging new particles called <strong>gluons</strong> to produce a new interaction called the strong interaction. The image below shows the baryons of the proton and neutron, as well as the longer-range nuclear binding mesons <strong>pi+</strong> and <strong>pi-</strong>, to illustrate how the quarks combine and how the spins and charges combine to yield the composite particles.</p>
+<img alt="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/222/2014/12/20112651/Figure_34_05_01.jpg" src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/222/2014/12/20112651/Figure_34_05_01.jpg" />
+</div>
+<div class="section" id="higgs-mechanism">
+<h3><span class="section-number">1.1.2.12. </span>Higgs Mechanism<a class="headerlink" href="#higgs-mechanism" title="Permalink to this headline">¶</a></h3>
+<p>In 1964 the <strong>BEHGHK/Higgs particle</strong> was also postulated, as part of a mechanism by which all particles obtained their rest mass-energy. This particle was finally observed in 2012.</p>
+</div>
+<div class="section" id="electroweak-unification">
+<h3><span class="section-number">1.1.2.13. </span>Electroweak Unification<a class="headerlink" href="#electroweak-unification" title="Permalink to this headline">¶</a></h3>
+<p>In 1968 it was realized that the weak interaction and the electromagnetic interaction actually unified at high energy to become the same interaction: the <strong>electroweak interaction</strong>. After detailed calculations it was realized that in addition to the photon for the electromagnetic force, there should be two additional force-carrying particles (<strong>Z</strong> and <strong>W</strong>) that mediated the weak interaction. While Z is charge-neutral, W can either have positive or negative electric charge. These additional particles were observed in 1983.</p>
+</div>
+<div class="section" id="tauons">
+<h3><span class="section-number">1.1.2.14. </span>Tauons<a class="headerlink" href="#tauons" title="Permalink to this headline">¶</a></h3>
+<p>In 1971 a third electron-like particle called the <strong>tauon</strong> was postulated, which was even heavier than the muon, along with an associated <strong>tau-neutrino</strong>. In 1974 both the tauon and the tau-neutrino was detected and confirmed.</p>
+</div>
+</div>
+<div class="section" id="the-standard-model-revisited">
+<h2><span class="section-number">1.1.3. </span>The Standard Model Revisited<a class="headerlink" href="#the-standard-model-revisited" title="Permalink to this headline">¶</a></h2>
+<p>With the discovery of the Higgs boson in 2012, all observed matter and interactions are accounted for, except for gravity. A “graviton” is expected to mediate the gravitational interaction just like the other interactions, but it may be too difficult to isolate and observe on its own. The resulting set of fundamental particles after this long journey is <strong>the Standard Model of Particle Physics</strong> (see <a class="reference external" href="https://www.symmetrymagazine.org/standard-model/">this neat interactive table</a>).</p>
+<div class="section" id="quanta">
+<h3><span class="section-number">1.1.3.1. </span>Quanta<a class="headerlink" href="#quanta" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition-terminology-note admonition">
+<p class="admonition-title">Terminology Note</p>
+<p>An individual quantum is often called a “<em>particle</em>” when it can be located in a small region of space. Collections of quanta that cover a broad region of space are often called “<em>quantum fields</em>” such that each individual particle is a “<em>localized field excitation</em>.” To avoid confusion of terminology, we use the neutral word “quantum” for the fundamental pieces in the Standard Model.</p>
+</div>
+</div>
+<p>We call each fundamental piece of the Standard Model a distinct type of <strong>quantum</strong>, meaning “one unit of a quantity”, such that many units are called <strong>quanta</strong>. This name reflects the fact that we can count integer amounts of each distinct type of quanta that compose everything in the world we see around us.</p>
+<p>Each quantum has only two fundamental <strong>properties</strong> that distinguish it from other quanta:</p>
+<ol class="simple">
+<li><p><strong>rest mass-energy</strong> : affects linear motion</p></li>
+<li><p><strong>spin angular momentum</strong> : affects rotational motion</p></li>
+</ol>
+<p>It is no accident that these properties are directly related to the possible motions that can occur. We will explore this connection in later sections.</p>
+<p>Curiously, <em>spin</em> only occurs in integer or half-integer multiples of a fundamental unit <span class="math notranslate nohighlight">\(\hbar\)</span>. Quanta with half-integer spin (e.g., <span class="math notranslate nohighlight">\(\hbar/2\)</span> or “spin-1/2”) are called <strong>fermions</strong> and naturally <em>repel each other</em> to maintain distinct locations and identities. Quanta with integer spin (e.g., <span class="math notranslate nohighlight">\(\hbar\)</span> or “spin-1”) are called <strong>bosons</strong> and naturally <em>bunch together</em> into collections that behave in unison. The <strong>matter</strong> or material substance around us tends to be composed of fermions, while the <strong>interactions</strong> affecting that matter are mediated by bunches of bosons.</p>
+<p>In total, the Standard Model contains only <strong><span class="math notranslate nohighlight">\(2\times(3\times4) + 6 = \mathbf{30}\)</span></strong> distinct types of quanta. The basic quanta include <strong>1</strong> boson that confines rest mass-energy, <strong>2</strong> bosons that mediate long-range interactions, <strong>3</strong> bosons that mediate short-range interactions within atomic nuclei, and <strong>4</strong> fermions that compose stable matter. There are additionally <strong>2</strong> unstable “generations” (or slightly heavier copies) of the <strong>4</strong> matter fermions, and <strong><span class="math notranslate nohighlight">\(3\times4 = \mathbf{12}\)</span></strong> fermions of associated anti-matter (or copies of matter with inverted properties). Omitting anti-matter for brevity, the quanta are:</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition-historical-note admonition">
+<p class="admonition-title">Historical Note</p>
+<p>The mechanism for creating <em>inertia</em> as confined mass-energy via quanta was detailed in three papers published back-to-back in the same 1964 journal issue of <em>Physical Review Letters</em>: (1) <a class="reference external" href="https://doi.org/10.1103%2FPhysRevLett.13.321">Brout and Englert</a>, (2) <a class="reference external" href="https://doi.org/10.1103%2FPhysRevLett.13.508">Higgs</a>, and (3) <a class="reference external" href="https://doi.org/10.1103%2FPhysRevLett.13.585">Guralnik, Hagan, and Kibble</a>. All six authors won the 2010 Sakurai Prize of the American Physical Society (APS) for their discovery, since all three papers are crucial for understanding the full mechanism. The scalar boson predicted by this mechanism was detected in 2012; however, only Englert and Higgs were awarded the theoretical physics Nobel Prize in 2013 due to the 3-recipient limitation of the prize and the prior passing of Brout. The acronym <em>BEHGHK</em> was proposed as the boson name to recognize all six authors but the name Higgs alone has stuck for common use (probably because Higgs is easier to say and sounds cooler to the public).</p>
+</div>
+</div>
+<ul class="simple">
+<li><p><strong>Interaction (bosons)</strong> : mediate changes in substance</p>
+<ul>
+<li><p><em>Inertia (1)</em>: long-range, confines <em>rest mass-energy</em></p>
+<ul>
+<li><p>BEHGHK/<strong>Higgs</strong> (<span class="math notranslate nohighlight">\(H\)</span>)</p></li>
+</ul>
+</li>
+<li><p><em>Gravity (1)</em>: long-range, only attractive, (<em>not yet observed</em>)</p>
+<ul>
+<li><p><strong>Graviton</strong> (<span class="math notranslate nohighlight">\(G\)</span>)</p></li>
+</ul>
+</li>
+<li><p><em>Electromagnetic (1)</em>: long-range, attractive and repulsive</p>
+<ul>
+<li><p><strong>Photon</strong> (<span class="math notranslate nohighlight">\(\gamma\)</span>)</p></li>
+</ul>
+</li>
+<li><p><em>Weak (2)</em>: short-range, nuclear decay/radiation</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(W\)</span>, <span class="math notranslate nohighlight">\(Z\)</span></p></li>
+</ul>
+</li>
+<li><p><em>Strong (1)</em>: short-range, nuclear binding</p>
+<ul>
+<li><p><strong>Gluon</strong> (<span class="math notranslate nohighlight">\(g\)</span>)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Matter (fermions)</strong> : form persistent substance</p>
+<ul>
+<li><p><em>Leptons</em> (2<span class="math notranslate nohighlight">\(\times\)</span>3): compose <em>chemical shells</em></p>
+<ul>
+<li><p><strong>Electron</strong> (<span class="math notranslate nohighlight">\(e\)</span>), Muon (<span class="math notranslate nohighlight">\(\mu\)</span>), Taon (<span class="math notranslate nohighlight">\(\tau\)</span>)</p></li>
+<li><p><strong>Electron-neutrino</strong> (<span class="math notranslate nohighlight">\(\nu_e\)</span>), Muon-neutrino (<span class="math notranslate nohighlight">\(\nu_\mu\)</span>), Taon-neutrino (<span class="math notranslate nohighlight">\(\nu_\tau\)</span>)</p></li>
+</ul>
+</li>
+<li><p><em>Quarks</em> (2<span class="math notranslate nohighlight">\(\times\)</span>3): compose <em>atomic nuclei</em></p>
+<ul>
+<li><p><strong>Up</strong> (<span class="math notranslate nohighlight">\(u\)</span>), Charm (<span class="math notranslate nohighlight">\(c\)</span>), Top (<span class="math notranslate nohighlight">\(t\)</span>)</p></li>
+<li><p><strong>Down</strong> (<span class="math notranslate nohighlight">\(d\)</span>), Strange (<span class="math notranslate nohighlight">\(s\)</span>), Bottom (<span class="math notranslate nohighlight">\(b\)</span>)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The chart below neatly vizualizes the <strong>18</strong> basic quanta and their distinctions (omitting the <em>12</em> anti-matter quanta):</p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles_%2B_Gravity.svg#/media/File:Standard_Model_of_Elementary_Particles_+_Gravity.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Standard_Model_of_Elementary_Particles_%2B_Gravity.svg/1200px-Standard_Model_of_Elementary_Particles_%2B_Gravity.svg.png" alt="Standard Model of Elementary Particles + Gravity.svg"></a></p>
+<p>Note that only the first generation of matter (<em>electron, electron-neutrino, up quark, down quark</em>) are <strong>stable</strong> and can persist for long times without decaying/transforming into other quanta. Moreover, the short-range interactions stay confined within the tiny nuclei of atoms, while the presence of the <em>Higgs</em> interaction is observed only indirectly within the rest mass-energy of the other quanta. <em>Therefore, the vast majority of our daily experience involves only <strong>three stable matter quanta</strong> (electron, up quark, down quark) and the <strong>two long-range interaction quanta</strong> (photon, graviton).</em></p>
+<!--
+It can be summarized as a remarkably short list of only 17 particles (and their antiparticles):
+
+6 leptons arranged in 3 generations of similar pairs:  (electron, electron-neutrino), (muon, muon-neutrino), (tauon, tau-neutrino).
+6 quarks arranged in 3 generations of similar pairs: (up, down), (charm, strange), (top, bottom)
+4 force-carrying (gauge, vector) bosons: photon (electromagnetic force); Z, W (weak force); gluon (strong force)
+1 mass-giving (scalar) boson: Higgs
+
+These 17 particles are distinguished from each other by 4 fundamental properties:
+
+energy-momentum :
+includes rest-mass (how heavy they are when not moving)
+dictates how much they feel the gravitational force
+always positive
+charge
+dictates how much they feel the electromagnetic force and the weak force
+can be either positive or negative (like signs repel and opposite signs attract) or zero (neutral)
+color charge
+dictates how much they feel the strong force
+can be one of three values (red, green, blue) with neutral color charge being called (white)
+angular momentum (spin)
+distinguishes fermions (half-integer spin) from bosons (integer spin)
+affects multi-particle behavior (solid, fluid, and gas properties)
+
+All other complex phenomena we observe must arise from interesting structures and motion composed of these basic things.
+
+The only missing piece to the standard model that we observe is gravity. There is strong suspicion that it must be mediated by a graviton in a similar way to the other forces, but currently we don't have a unified theory that clarifies its properties (other than likely being a spin-2 boson with no rest-mass or charges), and we don't have sensitive enough detectors to confirm its existence. In fact, there are sound arguments that we cannot ever build a detector that can verify individual gravitons because any detector large and sensitive enough will collapse into a black hole or cause other problems.
+
+There are still a few remaining fundamental questions (such as why there are 3 generations of leptons and quarks, why neutrinos seem to evolve into each other, etc.), but otherwise the Standard Model correctly describes all collected data from all particle accelerators from decades of observations. It is the most successful physical theory we have, and there is no experimental indication yet that we can expect much more to be added besides gravity.
+-->
+</div>
+<div class="section" id="interactions-fundamental-forces">
+<h3><span class="section-number">1.1.3.2. </span>Interactions / Fundamental Forces<a class="headerlink" href="#interactions-fundamental-forces" title="Permalink to this headline">¶</a></h3>
+<p>Each type of quantum can also have a few more properties that determine how it <strong>interacts</strong> with other quanta:</p>
+<ol class="simple">
+<li><p><strong>energy-momentum</strong> : affects motion, inertia, and gravitational interaction</p></li>
+<li><p><strong>electric charge</strong> : affects electromagnetic and weak interactions</p></li>
+<li><p><strong>color charge</strong> : affects strong interactions</p></li>
+<li><p><strong>chirality/handedness</strong> : affects weak interactions</p></li>
+</ol>
+<p><img alt="The Standard Model (with Chirality and Interactions)" src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/10/SM_graphic-FINAL-16-Annotated.jpg" /></p>
+</div>
+</div>
+<div class="section" id="particles-and-fields">
+<h2><span class="section-number">1.1.4. </span>Particles and Fields<a class="headerlink" href="#particles-and-fields" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stable-elements-and-the-periodic-table">
+<h2><span class="section-number">1.1.5. </span>Stable Elements and the Periodic Table<a class="headerlink" href="#stable-elements-and-the-periodic-table" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stellar-systems-and-cosmology">
+<h2><span class="section-number">1.1.6. </span>Stellar Systems and Cosmology<a class="headerlink" href="#stellar-systems-and-cosmology" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "justindressel/generalphysics",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./concepts"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="concepts.html" title="previous page"><span class="section-number">1. </span>Fundamental Concepts</a>
+    <a class='right-next' id="next-link" href="modeling.html" title="next page"><span class="section-number">1.2. </span>Formal Modeling</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By <a href="http://www.justindressel.com">Justin Dressel, Ph.D.</a><br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.30270b6e4c972e43c488.js"></script>
+
+
+    
+  </body>
+</html>
